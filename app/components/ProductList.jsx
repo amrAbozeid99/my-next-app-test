@@ -3,21 +3,19 @@
 import React, { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import  { useRef } from 'react';
-import HashLoader from 'react-spinners/HashLoader';
+// import HashLoader from 'react-spinners/HashLoader';
 import emailjs from '@emailjs/browser';
 // import { useNavigate } from 'react-router-dom';
 import { PacmanLoader } from 'react-spinners';
 import { IoHome } from "react-icons/io5";
 import { RiArrowGoBackLine } from "react-icons/ri";
 import { HiX } from "react-icons/hi";
-
-import { FaBeer } from "react-icons/fa";
+// import { FaBeer } from "react-icons/fa";
 import { BsBackspaceFill } from "react-icons/bs";
 import { BsBagCheckFill } from "react-icons/bs";
 import { BsBagXFill } from "react-icons/bs";
-import { IoCall } from "react-icons/bs";
+// import { IoCall } from "react-icons/bs";
 import Link from 'next/link';
-// import { Button } from 'bootstrap';
 
 
 
@@ -190,7 +188,7 @@ const sendEmail = (e) => {
               <div className="setTestorderData">
                 <PacmanLoader  color="yellowgreen" cssOverride={{}} size={120} speedMultiplier={1}/>
                 <h1 className='setTestorderH1' style={{color:'black',textShadow:'0 0 5px yellowgreen'}}>Your order has been sent.</h1>
-                <Link href={'../contactA'} style={{margin:'10px'}}> <button style={{background:'black',border:'0px',borderRadius:'10px',boxShadow:'0 0 5px yellowgreen'}}><div style={{color:'yellowgreen',fontSize:'800'}}><IoCall /> Go to the contact page</div></button></Link>
+                <Link href={'../contactA'} style={{margin:'10px'}}> <button style={{background:'black',border:'0px',borderRadius:'10px',boxShadow:'0 0 5px yellowgreen'}}><div style={{color:'yellowgreen',fontSize:'800'}}> Go to the contact page</div></button></Link>
               </div>
             </div>
 
