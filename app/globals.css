@@ -758,7 +758,7 @@ border-radius: 14px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #0000008f;
+  background-color: #adadad0c;
   box-shadow: 0px 0px 40px 0px #000000;
 }
 
@@ -777,8 +777,8 @@ border-radius: 14px;
   justify-content: center;
   flex-direction: column;
   padding: 10px;margin: 5px; */
-  background-color: rgba(255, 255, 255, 0.507);
-
+  background-color: #000000c9;
+  box-shadow: 0 0 5px #ff9900;
   width: 300px;
   height: auto;
   display: flex;
@@ -791,7 +791,7 @@ border-radius: 14px;
 }
 .product-item:hover{
   /* background-color: #000000cc; */
-  background-color: rgba(245, 167, 131, 0.507);
+  background-color: #000000d7;
   box-shadow:
   0 0 5px #ff9900,
   0 0 10px #ff6600,
@@ -1009,6 +1009,28 @@ color: #ffffff;}
   display: none;
 }
 
+
+.botContactGo{
+  background:black ;
+  border: 0px;
+  border-radius: 10px;
+  color: yellowgreen;
+  box-shadow: 0 0 5px yellowgreen;
+  
+}
+
+.HomecatrConra{
+  width: 17%;
+}
+
+.HomecatrImg{
+  width: 100%;
+}
+
+
+
+
+
 /* __________________________________________________________________________________________________________________ */
 /* __________________________________________________________________________________________________________________ */
 /* __________________________________________________________________________________________________________________ */
@@ -1183,7 +1205,9 @@ height: auto;
   }
 
 
-
+.pagehomeMovmeing{
+  flex-direction: column;
+}
 
 }
 

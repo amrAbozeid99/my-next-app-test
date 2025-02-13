@@ -188,7 +188,7 @@ const sendEmail = (e) => {
               <div className="setTestorderData">
                 <PacmanLoader  color="yellowgreen" cssOverride={{}} size={120} speedMultiplier={1}/>
                 <h1 className='setTestorderH1' style={{color:'black',textShadow:'0 0 5px yellowgreen'}}>Your order has been sent.</h1>
-                <Link href={'../contactA'} style={{margin:'10px'}}> <button style={{background:'black',border:'0px',borderRadius:'10px',boxShadow:'0 0 5px yellowgreen'}}><div style={{color:'yellowgreen',fontSize:'800'}}> Go to the contact page</div></button></Link>
+                <Link href={'../contactA'} style={{margin:'10px'}}> <button className='botContactGo'><h1 style={{color:'yellowgreen',fontSize:'800'}}> Go to the contact page...</h1></button></Link>
               </div>
             </div>
 
@@ -231,7 +231,7 @@ const sendEmail = (e) => {
               <li className={nexta?'LockZoneA':'nexta'}  style={{width:'100%', height:'100%'}}>
               
 
-              <div className='forminfo'><h1 className='forminfoB'>برجا كتابة بيانتاك لارسال الطلب  </h1><button className='gobackButtomCart' onClick={NextDataB}><RiArrowGoBackLine /></button></div>
+              <div className='forminfo'><h1 className='forminfoB'>برجاء كتابة البيانات لارسال الطلب  </h1><button className='gobackButtomCart' onClick={NextDataB}><RiArrowGoBackLine /></button></div>
               
               
               
@@ -293,10 +293,10 @@ const sendEmail = (e) => {
       <div className="productListContaner">
       <div className="product-list">
         {products.filter(product => {
-          return search.toLocaleLowerCase() === '' ? product : product.title.toLocaleLowerCase().includes(search);
+          return search.toLocaleLowerCase() === '' ? product : product.title.toLocaleLowerCase().includes(search.toLocaleLowerCase());
         }).map(product => (
           <div key={product.title} className="product-item">
-            <img className='catrImg' src={product.image} loading='lazy' alt="img" />
+            <img className='catrImg' src={product.image} loading='lazy' alt={product.title} />
             <h3>{product.title}</h3>
             <p>Size: {product.price} GB</p>
             <button className='orderbutton orderNaw' onClick={() => addToCart(product)}><span className='checkSend orderbuttonTEXT'>Add to Cart</span></button>
